@@ -1,0 +1,28 @@
+name: Bug report
+description: Report an issue with profile content, templates, or automation
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve this repository.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Clearly describe the issue.
+      placeholder: The profile page shows...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: I expected...
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Where did you see it?
+      placeholder: README, profile README, workflow, etc.

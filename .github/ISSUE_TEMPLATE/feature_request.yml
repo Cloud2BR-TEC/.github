@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an improvement to profile content or community templates
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What need does this request address?
+      placeholder: It is hard to...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change you want.
+      placeholder: We should add...
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: Who benefits and how?
