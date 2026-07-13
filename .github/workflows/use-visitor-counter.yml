@@ -1,0 +1,80 @@
+name: Update view counter
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-counter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate secret
+        env:
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          if [ -z "${TRAFFIC_TOKEN}" ]; then
+            echo "TRAFFIC_TOKEN secret is missing."
+            exit 1
+          fi
+
+      - name: Fetch traffic and update files
+        env:
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          OWNER_REPO="${GITHUB_REPOSITORY}"
+          API_URL="https://api.github.com/repos/${OWNER_REPO}/traffic/views"
+          RESPONSE="$(curl -fsSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "${API_URL}")"
+
+          COUNT="$(echo "${RESPONSE}" | jq -r '.count // 0')"
+          if ! [[ "${COUNT}" =~ ^[0-9]+$ ]]; then
+            COUNT="0"
+          fi
+
+          REFRESH_DATE="$(date -u +%Y-%m-%d)"
+          BADGE_URL="https://img.shields.io/badge/Total%20views-${COUNT}-0A66C2"
+
+          for FILE in README.md profile/README.md; do
+            if [ -f "${FILE}"; then
+              sed -i -E "s#(<img src=\")[^\"]*(\" alt=\"Total views\">)#\\1${BADGE_URL}\\2#g" "${FILE}"
+              sed -i -E "s#(<p>Refresh Date: )[0-9]{4}-[0-9]{2}-[0-9]{2}(</p>)#\\1${REFRESH_DATE}\\2#g" "${FILE}"
+            fi
+          done
+
+          cat > metrics.json <<EOF
+          {
+            "generated": true,
+            "repository": "${OWNER_REPO}",
+            "total_views": ${COUNT},
+            "refresh_date": "${REFRESH_DATE}",
+            "note": "This file is managed by .github/workflows/use-visitor-counter.yml and will be overwritten when the workflow runs."
+          }
+          EOF
+
+      - name: Commit and push
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md profile/README.md metrics.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: update visitor counter"
+          git push
