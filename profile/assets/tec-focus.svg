@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="TEC focus areas">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eaf2ff"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0a4fd6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="300" fill="#f4f8ff"/>
+  <text x="600" y="46" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800" fill="#0a4fd6">Focus Areas</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <!-- card template repeated -->
+    <g transform="translate(40,80)">
+      <rect width="210" height="170" rx="16" fill="url(#card)" filter="url(#s)"/>
+      <circle cx="105" cy="56" r="30" fill="#1e88ff"/>
+      <text x="105" y="64" text-anchor="middle" font-size="30" fill="#ffffff">&#9729;</text>
+      <text x="105" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#0b2e6b">Cloud</text>
+      <text x="105" y="144" text-anchor="middle" font-size="13" fill="#3b5a8c">Fundamentals &amp; Architecture</text>
+    </g>
+    <g transform="translate(270,80)">
+      <rect width="210" height="170" rx="16" fill="url(#card)" filter="url(#s)"/>
+      <circle cx="105" cy="56" r="30" fill="#1e88ff"/>
+      <text x="105" y="64" text-anchor="middle" font-size="28" fill="#ffffff">&#9881;</text>
+      <text x="105" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#0b2e6b">Data &amp; AI</text>
+      <text x="105" y="144" text-anchor="middle" font-size="13" fill="#3b5a8c">Foundations &amp; Applied</text>
+    </g>
+    <g transform="translate(500,80)">
+      <rect width="210" height="170" rx="16" fill="url(#card)" filter="url(#s)"/>
+      <circle cx="105" cy="56" r="30" fill="#1e88ff"/>
+      <text x="105" y="64" text-anchor="middle" font-size="26" fill="#ffffff">&#8734;</text>
+      <text x="105" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#0b2e6b">DevOps</text>
+      <text x="105" y="144" text-anchor="middle" font-size="13" fill="#3b5a8c">Platform Engineering</text>
+    </g>
+    <g transform="translate(730,80)">
+      <rect width="210" height="170" rx="16" fill="url(#card)" filter="url(#s)"/>
+      <circle cx="105" cy="56" r="30" fill="#1e88ff"/>
+      <text x="105" y="66" text-anchor="middle" font-size="30" fill="#ffffff">&#128274;</text>
+      <text x="105" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#0b2e6b">Security</text>
+      <text x="105" y="144" text-anchor="middle" font-size="13" fill="#3b5a8c">&amp; Governance</text>
+    </g>
+    <g transform="translate(960,80)">
+      <rect width="210" height="170" rx="16" fill="url(#card)" filter="url(#s)"/>
+      <circle cx="105" cy="56" r="30" fill="#1e88ff"/>
+      <text x="105" y="66" text-anchor="middle" font-size="28" fill="#ffffff">&#128736;</text>
+      <text x="105" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#0b2e6b">Dev Tools</text>
+      <text x="105" y="144" text-anchor="middle" font-size="13" fill="#3b5a8c">Modern Productivity</text>
+    </g>
+  </g>
+</svg>

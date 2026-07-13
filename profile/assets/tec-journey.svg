@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="TEC learning journey: Explore, Learn, Practice, Apply">
+  <rect width="1200" height="220" fill="#0a4fd6"/>
+  <defs>
+    <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dceaff"/>
+    </linearGradient>
+  </defs>
+  <text x="600" y="46" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">The Learning Journey</text>
+
+  <!-- connector line -->
+  <line x1="150" y1="130" x2="1050" y2="130" stroke="#4d86ff" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(150,130)">
+      <circle r="46" fill="url(#pill)"/>
+      <text y="-2" font-size="26" fill="#0a4fd6">&#128269;</text>
+      <text y="26" font-size="14" font-weight="700" fill="#0b2e6b">Explore</text>
+    </g>
+    <g transform="translate(450,130)">
+      <circle r="46" fill="url(#pill)"/>
+      <text y="-2" font-size="26" fill="#0a4fd6">&#128218;</text>
+      <text y="26" font-size="14" font-weight="700" fill="#0b2e6b">Learn</text>
+    </g>
+    <g transform="translate(750,130)">
+      <circle r="46" fill="url(#pill)"/>
+      <text y="-2" font-size="26" fill="#0a4fd6">&#129513;</text>
+      <text y="26" font-size="14" font-weight="700" fill="#0b2e6b">Practice</text>
+    </g>
+    <g transform="translate(1050,130)">
+      <circle r="46" fill="url(#pill)"/>
+      <text y="-2" font-size="26" fill="#0a4fd6">&#128640;</text>
+      <text y="26" font-size="14" font-weight="700" fill="#0b2e6b">Apply</text>
+    </g>
+  </g>
+</svg>
