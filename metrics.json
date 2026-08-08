@@ -1,14 +1,9 @@
 {
   "repository": "Cloud2BR-TEC/.github",
-  "refresh_date": "2026-08-07",
+  "refresh_date": "2026-08-08",
   "count": 0,
   "uniques": 0,
   "views": [
-    {
-      "timestamp": "2026-07-23T00:00:00Z",
-      "count": 0,
-      "uniques": 0
-    },
     {
       "timestamp": "2026-07-24T00:00:00Z",
       "count": 0,
@@ -71,6 +66,11 @@
     },
     {
       "timestamp": "2026-08-05T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-08-06T00:00:00Z",
       "count": 0,
       "uniques": 0
     }
