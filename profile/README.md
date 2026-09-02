@@ -1,7 +1,5 @@
 <div align="center">
 
-Last updated: 2026-09-02
-
 <img src="https://avatars.githubusercontent.com/u/304491634?s=180&v=4" width="128" alt="Technology Education Center logo" />
 
 # Technology Education Center (TEC) · Cloud2BR
@@ -94,6 +92,5 @@ flowchart LR
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-0-0A66C2" alt="Total views">
-  <p>Refresh Date: 2026-09-02</p>
 </div>
 <!-- END BADGE -->
