@@ -1,7 +1,5 @@
 <div align="center">
 
-Last updated: 2026-09-02
-
 <img src="https://avatars.githubusercontent.com/u/304491634?s=180&v=4" width="128" alt="Technology Education Center logo" />
 
 # Technology Education Center (TEC) · Cloud2BR
