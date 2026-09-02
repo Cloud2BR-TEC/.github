@@ -1,69 +1,93 @@
-# Technology Education Center (TEC) - Cloud2BR
+<div align="center">
 
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
-[Cloud2BR](https://github.com/Cloud2BR)
+<img src="https://avatars.githubusercontent.com/u/304491634?s=180&v=4" width="128" alt="Technology Education Center logo" />
 
-Last updated: 2026-09-02
+# Technology Education Center (TEC) · Cloud2BR
+
+**Technology education and practical learning for cloud, data, AI, and modern engineering**
+
+<a href="https://cloud2br-tec.github.io/tec-hub/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Hub-Technology%20Education-0A66C2?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="TEC Hub"></a>
+<a href="#learning-paths-and-resources"><img src="https://img.shields.io/badge/Format-Learning%20Paths%20%7C%20Labs%20%7C%20Workshops-6A1B9A?style=for-the-badge" alt="Format"></a>
+<a href="https://github.com/Cloud2BR-TEC" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Community-Open%20Learning-2E7D32?style=for-the-badge&logo=github&logoColor=white" alt="Community"></a>
+
+</div>
 
 ----------
 
-<div align="center">
-  <img src="./assets/tec-banner.svg" alt="Technology Education Center by Cloud2BR" width="100%">
-</div>
+> **Mission:** Enable people and organizations to explore, learn, and apply technology with confidence.
 
-> The Technology Education Center (TEC) of Cloud2BR is a technology learning and enablement platform dedicated to making cloud and modern technology education accessible to everyone.
+## Learning journey
 
-TEC provides self-paced learning resources, hands-on labs, videos, workshops, and instructor-led programs for individuals, teams, and organizations.
+```mermaid
+flowchart LR
+  F[Foundations]:::step --> P[Practice]:::step --> A[Apply]:::step --> G[Grow]:::step
+  F -.-> F1[Build shared terminology]
+  P -.-> P1[Complete labs and guided exercises]
+  A -.-> A1[Use skills in real scenarios]
+  G -.-> G1[Share knowledge and deepen expertise]
 
-Through open resources, structured courses, and practical experiences, TEC helps learners build real-world skills across cloud platforms and emerging technologies.
+  classDef step fill:#0A66C2,stroke:#083c72,color:#ffffff,font-weight:bold
+```
 
-## Mission
+## Learning paths and resources
 
-Enable people and organizations to explore, learn, and apply technology with confidence.
+| Category | Description |
+|---|---|
+| **Learning paths and practical guides** | Structured, self-paced resources from fundamentals to applied skills |
+| **Hands-on labs and sandbox exercises** | Safe environments for building and testing technical skills |
+| **Videos and workshop materials** | Explainable content for individual and team learning sessions |
+| **Instructor-led programs** | Facilitated learning experiences for teams and organizations |
+| **Community resources** | Open materials that support continued practice and knowledge sharing |
 
-## Learning Experience
+## Endorsements and certifications
 
-<div align="center">
-  <img src="./assets/tec-journey.svg" alt="TEC learning journey" width="100%">
-</div>
+<details>
+<summary><strong>Microsoft certification study guides</strong></summary>
 
-- Self-paced learning paths and practical guides
-- Hands-on labs and sandbox exercises
-- Video explainers and workshop materials
-- Instructor-led programs for teams and organizations
-- Open community resources for continuous learning
+- <a href="https://github.com/MicrosoftCloudEssentials-LearningHub/AI-900StudyGuide" target="_blank" rel="noopener noreferrer">AI-900: Azure AI Fundamentals</a>
+- <a href="https://github.com/MicrosoftCloudEssentials-LearningHub/DP-900StudyGuide" target="_blank" rel="noopener noreferrer">DP-900: Azure Data Fundamentals</a>
+- <a href="https://github.com/MicrosoftCloudEssentials-LearningHub/AI-102StudyGuide" target="_blank" rel="noopener noreferrer">AI-102: Azure AI Engineer Associate</a>
+- <a href="https://github.com/MicrosoftCloudEssentials-LearningHub/DP-100StudyGuide" target="_blank" rel="noopener noreferrer">DP-100: Designing and Implementing a Data Science Solution on Azure</a>
+- <a href="https://github.com/Cloud2BR-MSFTLearningHub/GH-900StudyGuide" target="_blank" rel="noopener noreferrer">GH-900: GitHub Foundations</a>
 
-## Focus Areas
+</details>
 
-<div align="center">
-  <img src="./assets/tec-focus.svg" alt="TEC focus areas" width="100%">
-</div>
+## Focus areas
 
-- Cloud fundamentals and architecture
-- Data and AI foundations
-- DevOps and platform engineering
-- Security and governance practices
-- Productivity with modern developer tools
+| Area | Learning focus |
+|---|---|
+| **Cloud fundamentals and architecture** | Cloud concepts, solution design, and practical architecture skills |
+| **Data and AI foundations** | Data platforms, AI services, and responsible applied AI patterns |
+| **DevOps and platform engineering** | Delivery automation, operational practices, and developer productivity |
+| **Security and governance** | Secure engineering, identity, policy, and accountable cloud operations |
+| **Modern productivity tools** | Collaboration and developer tooling that supports effective teams |
 
-## Who TEC Supports
+## Who TEC supports
 
-- Individual learners and career switchers
-- Technical teams building new capabilities
-- Organizations upskilling at scale
-- Community leaders running local learning programs
+- **Individual learners and career switchers** building practical technology skills
+- **Technical teams** developing shared capability for new platforms and workloads
+- **Organizations** establishing scalable learning programs
+- **Community leaders** delivering local learning experiences and workshops
 
-## Start Here
+## Related organizations
 
-- Explore repositories for guides, labs, and workshop content
-- Follow structured paths to move from fundamentals to applied projects
-- Use sample assets to practice and adapt for your own environment
+| Organization | Purpose |
+|---|---|
+| <a href="https://github.com/Cloud2BR" target="_blank" rel="noopener noreferrer"><strong>Cloud2BR</strong></a> | Consulting and enablement hub |
+| <a href="https://github.com/Cloud2BR-TEC" target="_blank" rel="noopener noreferrer"><strong>Cloud2BR TEC Hub</strong></a> | Technology Education Center |
+| <a href="https://github.com/Cloud2BR-MSFTLearningHub" target="_blank" rel="noopener noreferrer"><strong>Cloud2BR MSFT Learning Hub</strong></a> | Open-source Microsoft Cloud Sandbox |
 
-## Collaboration
+## Get involved
 
-TEC welcomes collaboration through issues, pull requests, and knowledge-sharing contributions.
+- **Explore** the organization repositories for learning paths, labs, and workshop content
+- **Practice** with sample assets and adapt them to your approved learning environment
+- **Contribute** through issues, pull requests, and knowledge-sharing activities
+
+> [!IMPORTANT]
+> Content is provided **AS-IS** and **WITH ALL FAULTS**. Review and validate materials before production use. For official guidance, refer to Microsoft's documentation or contact <a href="https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME" target="_blank" rel="noopener noreferrer">Microsoft Sales and Support</a>.
 
 > [!NOTE]
-> Repository content is designed for education, enablement, and practical experimentation. Validate and adapt before production use.
+> Content is for **learning, demonstrations, and practical experimentation**. Adapt it to the learner, organization, and environment.
 
 <!-- START BADGE -->
 <div align="center">
