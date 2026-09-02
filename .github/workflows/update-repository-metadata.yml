@@ -60,11 +60,15 @@ jobs:
               '<!-- END BADGE -->'
             ].join(newline);
 
-            if (/^Last updated: \d{4}-\d{2}-\d{2}$/m.test(text)) {
-              text = text.replace(/^Last updated: \d{4}-\d{2}-\d{2}$/m, `Last updated: ${today}`);
+            if (file === 'README.md') {
+              if (/^Last updated: \d{4}-\d{2}-\d{2}$/m.test(text)) {
+                text = text.replace(/^Last updated: \d{4}-\d{2}-\d{2}$/m, `Last updated: ${today}`);
+              } else {
+                const headingEnd = text.indexOf(newline);
+                text = headingEnd === -1 ? `${text}${newline}${newline}Last updated: ${today}${newline}` : `${text.slice(0, headingEnd + 1)}${newline}Last updated: ${today}${newline}${text.slice(headingEnd + 1)}`;
+              }
             } else {
-              const headingEnd = text.indexOf(newline);
-              text = headingEnd === -1 ? `${text}${newline}${newline}Last updated: ${today}${newline}` : `${text.slice(0, headingEnd + 1)}${newline}Last updated: ${today}${newline}${text.slice(headingEnd + 1)}`;
+              text = text.replace(/^Last updated: \d{4}-\d{2}-\d{2}\r?\n\r?\n?/m, '');
             }
 
             if (/<!-- START BADGE -->[\s\S]*?<!-- END BADGE -->/.test(text)) {
